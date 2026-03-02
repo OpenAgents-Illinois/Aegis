@@ -11,7 +11,7 @@ These rules are shared with Claude Code. The canonical definitions live in `.git
 
 - **Language:** Use the primary language and version detected in the workspace.
 - **Issues:** Use `.github/prompts/ISSUE_PROMPT.md` for all issue creation and task documentation. Read that file when drafting or creating a GitHub issue.
-- **Commits:** Use `.github/prompts/COMMIT_PROMPT.md` for all commit message formatting. Read that file when writing or amending commit messages.
+- **Commits:** Use `.github/prompts/COMMIT_PROMPT.md` for all commit message formatting. Read that file when writing or amending commit messages. When you create a commit, add the appropriate **Co-authored-by** line (Cursor Agent or Claude) as defined in that file.
 
 ## Issue tracking
 

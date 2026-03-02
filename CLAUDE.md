@@ -4,7 +4,7 @@
 
 - **Language:** Use the primary language and version detected in the workspace
 - **Issues:** Use `.github/prompts/ISSUE_PROMPT.md` for all issue creation and task documentation tasks
-- **Commits:** Use `.github/prompts/COMMIT_PROMPT.md` for all commit message formatting
+- **Commits:** Use `.github/prompts/COMMIT_PROMPT.md` for all commit message formatting. When you create a commit, add the appropriate Co-authored-by line (Claude or Cursor) as defined in that file.
 
 ## Issue Tracking
 

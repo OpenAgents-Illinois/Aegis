@@ -274,15 +274,16 @@ aegis/
 
 ---
 
-## Supported Warehouses
+## Supported Warehouses (SQLAlchemy-compatible)
 
-| Warehouse | Status | Extra Dependency |
-|-----------|--------|-----------------|
-| PostgreSQL | Supported | (included) |
-| SQLite | Supported | (included) |
-| Snowflake | Supported | `pip install "aegis[snowflake]"` |
-| BigQuery | Supported | `pip install "aegis[bigquery]"` |
-| Databricks | Supported | `pip install "aegis[databricks]"` |
+| Warehouse   | Dialect      | Optional install        |
+|------------|--------------|-------------------------|
+| PostgreSQL | `postgresql` | (built-in)              |
+| Snowflake  | `snowflake`  | `pip install -e ".[snowflake]"` |
+| BigQuery   | `bigquery`   | `pip install -e ".[bigquery]"`  |
+| Databricks | `databricks` | `pip install -e ".[databricks]"` |
+
+Discovery and monitoring work with any of these. Query-log lineage extractors exist for PostgreSQL, Snowflake, and BigQuery only. Canonical list: `aegis/backend/aegis/core/connectors.py` → `SUPPORTED_WAREHOUSE_DIALECTS`.
 
 Any SQLAlchemy-compatible dialect can be added by extending `WarehouseConnector`.
 

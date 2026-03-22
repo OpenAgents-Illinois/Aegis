@@ -44,6 +44,7 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           trigger_phrase: "@claude"
+          allow_forks: true
           claude_args: "--max-turns 50"
           prompt: |
             You are fixing issues and reviewing PRs for the Aegis Data Intelligence platform.
